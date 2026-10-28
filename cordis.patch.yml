@@ -1,0 +1,7 @@
+# @local/dsh-github bundle patch：把 GitHub 连接 / 上传插件插入 profile 阵容。
+# 宿主半体（exports "."）运行在宿主进程，注册 github_status / github_push /
+# github_create_repo 三个工具；浏览器半体（./client）在「设置 → 插件配置」里
+# 渲染令牌绑定卡片。上传动作永远先经过 approval 服务，由用户当场授权。
+- insert:
+    - id: github-connector
+      name: '@local/dsh-github'

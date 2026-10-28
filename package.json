@@ -1,0 +1,29 @@
+{
+  "name": "@local/dsh-github",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH GitHub 连接与代码上传插件：在插件配置里绑定 GitHub 令牌，Agent 通过 github_push 工具把本地代码上传到仓库，每次上传前都必须由你在界面上授权。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

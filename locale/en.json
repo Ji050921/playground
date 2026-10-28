@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "GitHub Connector",
+    "description": "Bind a GitHub account and upload local code to a repository or branch. Every upload requires your explicit approval in the UI first."
+  }
+}
